@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.mdw-container {
+  @apply mdw-mx-auto mdw-max-w-4xl mdw-px-4;
+}
+
+.mdw-textarea {
+  @apply mdw-w-full mdw-h-40 mdw-border mdw-border-gray-300 mdw-rounded-lg mdw-p-4 
+         mdw-bg-gray-100 mdw-outline-none mdw-resize-none mdw-text-gray-700
+         focus:mdw-ring-2 focus:mdw-ring-blue-500;
+}
+
+@layer components {
+  .mdw-btn {
+    @apply mdw-py-2 mdw-px-4 mdw-rounded-lg mdw-h-11 mdw-min-h-11 mdw-font-medium mdw-transition-all mdw-duration-300;
+  }
+
+  .mdw-btn-primary {
+    @apply mdw-bg-blue-600 mdw-border mdw-border-blue-600 mdw-text-white hover:mdw-bg-blue-700 active:mdw-bg-blue-500;
+  }
+
+  .mdw-btn-secondary {
+    @apply mdw-bg-gray-600 mdw-border mdw-border-gray-600 mdw-text-white hover:mdw-bg-gray-700 active:mdw-bg-gray-500;
+  }
+
+  .mdw-btn-success {
+    @apply mdw-bg-green-600 mdw-border mdw-border-green-600 mdw-text-white hover:mdw-bg-green-700 active:mdw-bg-green-500;
+  }
+
+  .mdw-btn-danger {
+    @apply mdw-bg-red-600 mdw-border mdw-border-red-600 mdw-text-white hover:mdw-bg-red-700 active:mdw-bg-red-500;
+  }
+
+  .mdw-btn-warning {
+    @apply mdw-bg-yellow-500 mdw-border mdw-border-yellow-500 mdw-text-black hover:mdw-bg-yellow-600 active:mdw-bg-yellow-400;
+  }
+
+  .mdw-btn-outline {
+    @apply mdw-bg-transparent mdw-border mdw-border-blue-600 mdw-text-blue-600 hover:mdw-bg-blue-600 hover:mdw-text-white active:mdw-bg-blue-700;
+  }
+
+  .mdw-btn:disabled {
+    @apply mdw-bg-gray-300 mdw-text-gray-500 mdw-border-gray-300 mdw-cursor-not-allowed mdw-opacity-60;
+  }
+
+  .mdw-btn-lg {
+    @apply mdw-py-3 mdw-px-6 mdw-text-lg mdw-h-12;
+  }
+
+  .mdw-btn-md {
+    @apply mdw-py-2 mdw-px-4 mdw-text-base mdw-h-11;
+  }
+
+  .mdw-btn-sm {
+    @apply mdw-py-1 mdw-px-3 mdw-text-sm mdw-h-9;
+  }
+}
